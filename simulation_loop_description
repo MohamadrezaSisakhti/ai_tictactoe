@@ -1,1 +1,22 @@
-هدف اصلی از این بخش از پروژه آزمایشگاه هوش مصنوعی، طراحی، پیاده‌سازی و اعتبارسنجی یک محیط استاندارد برای بازی دوز (Tic-Tac-Toe) است. در علم هوش مصنوعی، پیش از اینکه بتوانیم یک «عامل هوشمند» (Agent) برای بازی کردن بسازیم، ابتدا باید بستر و قوانین دنیایی که عامل قرار است در آن تصمیم بگیرد (محیط یا Environment) را به دقت مدل‌سازی کنیم. این تمرین به شما کمک می‌کند تا نحوه تعامل بین وضعیت‌های بازی، حرکات قانونی، اعمال تغییرات و تشخیص شرایط پایان بازی (برد، باخت یا تساوی) را به صورت برنامه‌نویسی پیاده‌سازی کنید.
+# Tic-Tac-Toe Environment and Simulation Loop (AI Laboratory)
+
+## 1. Objective of the Exercise
+The primary objective of this exercise is to design, implement, and validate a standard environment for the Tic-Tac-Toe game. In artificial intelligence, before developing an intelligent agent to play a game, it is essential to accurately model the environment—the world in which the agent operates and makes decisions. This practice helps us understand state management, legal action tracking, and terminal condition evaluation (win, loss, or draw).
+
+## 2. Theoretical Background & Environment Properties
+In AI, problems are analyzed based on the interaction between an Agent and an Environment:
+* Simulation Loop: A repetitive cycle where the game starts from an initial state, players take turns executing actions, the environment updates and evaluates the new state, and the process continues until a terminal state is reached.
+* Environment Properties:
+  * Discrete: The state space and action space are finite and clearly defined.
+  * Deterministic: Every action leads to a completely predictable outcome with no stochastic elements.
+  * Fully Observable: Both players have complete and direct access to the entire board state at all times.
+
+## 3. Files Included in This Folder
+* tictactoe_env.py: Contains the TicTacToeEnv class, managing the board representation, legal action checks, step transitions, and win/draw evaluations.
+* simulation.py: Implements a test simulation loop running random players to verify the correctness and robustness of the environment logic.
+
+## 4. How to Run
+Ensure you have Python and NumPy installed, then execute the simulation script via your terminal:
+\\\bash
+python simulation.py
+\\\
